@@ -5,6 +5,13 @@
         id          = "com.agusp.myapps"
         version     = "3.5.0"
         versionCode = "10" >
+		
+		<platform name="android">
+              <icon src="images/icon-48px.png" density="mdpi" />
+              <icon src="images/icon-72px.png" density="hdpi" />
+              <icon src="images/icon-96px.png" density="xhdpi" />
+              <icon src="images/icon-144px.png" density="xxhdpi" />
+       </platform>
 
         <!-- versionCode is optional and Android only -->
 
