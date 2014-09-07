@@ -5,21 +5,25 @@
         version     = "3.5.0"
         versionCode = "10" >
 		
-	<platform name="android">
+	<!--<platform name="android">
               <icon src="images/icon-48px.png" density="mdpi" />
               <icon src="images/icon-72px.png" density="hdpi" />
               <icon src="images/icon-96px.png" density="xhdpi" />
               <icon src="images/icon-144px.png" density="xxhdpi" />
-       </platform>
+       </platform> -->
 
-         	<!--versionCode is optional and Android only 
+<icon src="images/icon-48px.png" gap:platform="android" gap:density="mdpi" />
+<icon src="images/icon-72px.png" gap:platform="android" gap:density="hdpi" />
+<icon src="images/icon-96px.png" gap:platform="android" gap:density="xhdpi" />
+<icon src="images/icon-144px.png" gap:platform="android" gap:density="xxhdpi" />
+         	<!--versionCode is optional and Android only -->
 
-        <preference name="phonegap-version" value="3.5.0" />-->
+        <preference name="phonegap-version" value="3.5.0" />
 
-        <name>&nbsp;</name>
+        <name>Pesona Nusantara</name>
 
-        <description>
-      	&nbsp;
+        <description>å
+      Cake Application
         </description>
 
         <author href="http://yoursite.com" email="you@youremail.com">
