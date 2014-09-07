@@ -2,7 +2,7 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
 
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.example"
+        id          = "com.agusp.myapps"
         version     = "3.5.0"
         versionCode = "10" >
 
@@ -10,7 +10,7 @@
 
         <preference name="phonegap-version" value="3.5.0" />
 
-        <name>My Sample Apps</name>
+        <name>Pesona Nusantara</name>
 
         <description>
        Apps. for online cake
