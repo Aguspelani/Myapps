@@ -1,0 +1,86 @@
+/* globla styles/layout */
+body { font-size: 18px; width: 100%; font-family: verdana, "tahoma", serif; color:#333 ; line-height: 1.2em; margin: 0; padding:0 ; background-color: #efefef; }
+
+
+@font-face {
+font-family: 'HoboStd'; src: url('../fonts/HoboStdeot');
+src: local('../fonts/HoboStd.ttf'), 
+local('HoboStd'), 
+url('../fonts/HoboStd.ttf') format('truetype'),
+url('../fonts/HoboStd.woff') format('woff'),
+url('../fonts/HoboStd.otf') format('opentype'),
+url('../fonts/HoboStd.svg#font') format('svg'); 
+}
+
+/* wrapper */
+.wrapper { width: 100%; margin: 0 auto; background:url(../images/bg-moble.jpg) repeat-x;}
+
+/* GUI bar*/
+#GUI-topbar { clear: both; background: #000 url(../images/bar.jpg) no-repeat center; height: 33px; }
+
+/* header */
+header { clear: both; display: block; width: 100%;  position: relative; background:url(../images/bg-slider.png) repeat-x bottom;  display: block; top: 0; left: 0; z-index: 1; margin: 0;  }
+
+header #logo { display: block; position: absolute; width:166px; height: 74px; top: -2px;  left: 100px;  margin: 0; }
+header #logo h1 { display: block; position: absolute; background: url(../images/logo.png) no-repeat; width:166px; text-indent: -9000px; height: 74px; top: 0; margin: 0; z-index: 99; }
+
+/* user panel */
+#userpanel { position: relative; top: 0;  background-color: #0c3e59; width: 100%; height: 35px; z-index: 5; }
+#userpanel a.btn-sign  { float: left; position: absolute; top: 5px; left: 15px; cursor:pointer;
+display: block; background: url(../images/btn-sign.png) no-repeat; width: 51px; height: 22px; border: none; text-indent: -9000px;}
+#userpanel a:hover.btn-sign { display: block;  background: url(../images/btn-sign-touch.png) no-repeat; width: 51px; height: 22px; border: none;text-indent: -9000px; }
+#userpanel a.btn-reg { float: right; position: absolute; top: 5px; right: 15px; cursor:pointer;
+display: block; background: url(../images/btn-reg.png) no-repeat; width: 57px; height: 22px; border: none; text-indent: -9000px;}
+#userpanel a:hover.btn-reg { display: block;  background: url(../images/btn-reg-touch.png) no-repeat; width: 57px; height: 22px; border: none;text-indent: -9000px; }
+
+/* slider 
+#slider { position: absolute; top: 35px; left: 0; background:url(../images/bg-slider.png) no-repeat bottom; margin: 0; z-index: 5; width: 100%; }*/
+
+/* content index*/
+#product-menu { clear: both; width: 320px; margin: 0 auto; padding: 0; overflow: hidden; display: block; height: 135px;}
+#product-menu ul { margin: 0; padding: 0; }
+#product-menu ul li { list-style: none; display: inline; margin:0; padding:0; text-align: center;  }
+#product-menu ul li.mn-terbaru a { float: left;display: block; background: url(../images/btn-terbaru.png) no-repeat; width: 97px; height: 25px; color: black; padding:100px 0 0 0;text-decoration: none; font-size: 14px ; font-family:"HoboStd", fallback, Verdana, arial; }
+#product-menu ul li.mn-rekomendasi a { float: left;display: block; background: url(../images/btn-rekomendasi.png) no-repeat; width: 107px; height: 25px; color: black; padding:100px 0 0 0; text-decoration: none; font-size: 14px ; font-family:"HoboStd", fallback, Verdana, arial;}
+#product-menu ul li.mn-palinglaris a { float: left; display: block; background: url(../images/btn-palinglaris.png) no-repeat; width: 113px; height: 25px; color: black; padding:100px 0 0 0;text-decoration: none; font-size: 14px ; font-family:"HoboStd", fallback, Verdana, arial;}
+
+/* Nav */
+nav { clear: both; position: absolute; left: 0; bottom: 0; background:url(../images/bggrad.gif) repeat-x top; height: 65px; width: 100%; margin: 0;}
+nav ul { margin: 0; padding: 0; }
+nav ul li { display: inline; list-style: none; margin: 0; padding: 9px 15px; border-right: 1px solid #0c3a55; }
+nav ul li.nav-home { float: left; display: block; background:url(../images/nav-home.png) no-repeat center; width: 40px; height: 46px; text-indent:-9000px; color:white; }
+nav ul li.nav-home:hover {float: left;  display: block; background:url(../images/nav-home.png) no-repeat center; background-color: black; width: 40px; height: 46px; cursor: pointer; }
+
+nav ul li.nav-home a { float: left; display: block; width: 100%; height: 100%; }
+
+
+nav ul li.nav-profile {float: left;   display: block; background:url(../images/nav-profile.png) no-repeat center; width: 40px; height: 46px; text-indent:-9000px; color:white;}
+nav ul li.nav-profile:hover { float: left;  display: block; background:url(../images/nav-profile.png) no-repeat center; background-color: black; width: 40px; height: 46px; cursor: pointer; }
+
+nav ul li.nav-profile a { float: left; display: block; width: 100%; height: 100%; }
+
+
+nav ul li.nav-product {float: left;  display: block; background:url(../images/nav-product.png) no-repeat 17px 6px; width: 45px; height: 47px; text-indent:-9000px; color:white;}
+
+nav ul li.nav-product:hover { float: left;  display: block; background:url(../images/nav-product.png) no-repeat 17px 6px; background-color: black; width: 45px; height: 47px; cursor: pointer; }
+
+nav ul li.nav-product a { float: left; display: block; width: 100%; height: 100%; }
+
+nav ul li.nav-track {float: left;   display: block; background:url(../images/nav-track.png) no-repeat 17px 8px; width: 39px; height: 47px; text-indent:-9000px; color:white;}
+nav ul li.nav-track:hover { float: left;  display: block; background:url(../images/nav-track.png) no-repeat 17px 8px; background-color: black; width: 39px; height: 47px; cursor: pointer; }
+nav ul li.nav-track a { float: left; display: block; width: 100%; height: 100%; }
+
+nav ul li.nav-more{float: left;   display: block; background:url(../images/nav-more.png) no-repeat 17px 13px; width: 42px; height: 47px; text-indent:-9000px; color:white;}
+nav ul li.nav-more:hover { float: left;  display: block; background:url(../images/nav-more.png) no-repeat 17px 13px; background-color: black; width: 42px; height: 47px; cursor: pointer; }
+nav ul li.nav-more a { float: left; display: block; width: 100%; height: 100%; }
+nav ul li.nav-more.nav-bdr{ border: none; }
+
+/* Title bar */
+#title-bar { position: relative; top: 0;  background-color: #0c3e59; padding:7px; z-index: 5; }
+#title-bar h1 { font-size: 21px ; font-weight:normal; color: #fff;font-family:"HoboStd", fallback, Verdana, arial; margin: 0; padding: 0; text-align:center; }
+
+/* content */
+#content { background-color: white; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; o-border-radius: 8px; margin: 5px 5px 0 5px; height:495px; }
+
+
+ 
